@@ -260,6 +260,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
+
   let form = document.getElementById('support-form');
   if (form) {
     form.addEventListener('submit', function(e) {
