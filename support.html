@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NeoTech — Поддержка</title>
+  <link rel="stylesheet" href="Styles/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">NeoTech</div>
+    <nav>
+      <a href="#" class="nav-link" data-page="shop">Магазин</a>
+      <a href="#" class="nav-link" data-page="profile">Профиль</a>
+      <a href="#" class="nav-link active" data-page="support">Поддержка</a>
+    </nav>
+  </header>
+
+  <main id="support-page" class="page">
+    <h1>Служба поддержки</h1>
+    <a href="#" class="back-link nav-link" data-page="shop">← Назад в магазин</a>
+    <div class="support-section">
+      <div class="support-card">
+        <h2>Обратная связь</h2>
+        <p>Напишите нам — мы ответим в течение 24 часов.</p>
+        <form id="support-form">
+          <div class="form-group">
+            <label for="name">Имя</label>
+            <input type="text" id="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+          </div>
+          <div class="form-group">
+            <label for="topic">Тема обращения</label>
+            <select id="topic" required>
+              <option value="">Выберите...</option>
+              <option value="order">Проблема с заказом</option>
+              <option value="payment">Оплата</option>
+              <option value="delivery">Доставка</option>
+              <option value="product">Вопрос о товаре</option>
+              <option value="other">Другое</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Сообщение</label>
+            <textarea id="message" required></textarea>
+          </div>
+          <button type="submit">Отправить</button>
+        </form>
+      </div>
+
+      <div class="support-card">
+        <h2>Контакты</h2>
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="contact-icon">📧</span>
+            <span>support@neotech.ru</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📞</span>
+            <span>+7 (495) 123-45-67</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">🕒</span>
+            <span>Пн–Пт: 9:00–21:00, Сб–Вс: 10:00–18:00</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="support-card">
+        <h2>Частые вопросы</h2>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Как отследить заказ?</span>
+            <span>▼</span>
+          </div>
+          <div class="faq-answer">
+            После оформления заказа вы получите email с трек-номером. Также статус можно посмотреть в разделе «Профиль».
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Можно ли вернуть товар?</span>
+            <span>▼</span>
+          </div>
+          <div class="faq-answer">
+            Да, в течение 14 дней с момента получения, если товар не был в использовании и сохранена упаковка.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Есть ли гарантия на технику?</span>
+            <span>▼</span>
+          </div>
+          <div class="faq-answer">
+            Все устройства продаются с официальной гарантией от производителя — от 1 до 3 лет в зависимости от бренда.
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 NeoTech. Все права защищены.</p>
+  </footer>
+
+  <script src="Scripts/app.js"></script>
+</body>
+</html>

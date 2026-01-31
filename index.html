@@ -1,21 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechStore</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NeoTech — Магазин</title>
+  <link rel="stylesheet" href="Styles/style.css">
 </head>
 
 <body>
-    <header></header>
 
-    <main></main>
-    
-    <footer></footer>
+  <header>
+    <div class="logo">NeoTech</div>
+    <nav>
+      <a href="#" class="nav-link active" data-page="shop">Магазин</a>
+      <a href="#" class="nav-link" data-page="profile">Профиль</a>
+      <a href="#" class="nav-link" data-page="support">Поддержка</a>
+    </nav>
+  </header>
 
-    <script src="app.js"></script>
+  <main id="shop-page" class="page">
+    <h1>Технологии будущего уже здесь</h1>
+    <div class="products">
+
+      <div class="product-card">
+        <div class="product-img">📱</div>
+        <div class="product-info">
+          <div>
+            <div class="product-title">Samsung Galaxy S24 Ultra</div>
+            <div class="product-desc">Флагманский смартфон с ИИ-камерой и титановым корпусом.</div>
+            <div class="product-price">99 990 ₽</div>
+          </div>
+          <button class="btn add-to-cart" data-id="1">Добавить</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img">💻</div>
+        <div class="product-info">
+          <div>
+            <div class="product-title">MacBook Pro 16"</div>
+            <div class="product-desc">M3 Max, 32 ГБ RAM, 1 ТБ SSD — мощь в каждом пикселе.</div>
+            <div class="product-price">189 990 ₽</div>
+          </div>
+          <button class="btn add-to-cart" data-id="2">Добавить</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img">🎧</div>
+        <div class="product-info">
+          <div>
+            <div class="product-title">Sony WH-1000XM5</div>
+            <div class="product-desc">Лучшее шумоподавление и 30 ч автономии.</div>
+            <div class="product-price">24 990 ₽</div>
+          </div>
+          <button class="btn add-to-cart" data-id="3">Добавить</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img">⌚</div>
+        <div class="product-info">
+          <div>
+            <div class="product-title">Apple Watch Ultra 2</div>
+            <div class="product-desc">Для спортсменов и исследователей экстремальных мест.</div>
+            <div class="product-price">84 990 ₽</div>
+          </div>
+          <button class="btn add-to-cart" data-id="4">Добавить</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img">🎮</div>
+        <div class="product-info">
+          <div>
+            <div class="product-title">PlayStation 5 Pro</div>
+            <div class="product-desc">4K/120 FPS, трассировка лучей, огромная библиотека игр.</div>
+            <div class="product-price">69 990 ₽</div>
+          </div>
+          <button class="btn add-to-cart" data-id="5">Добавить</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img">🖨️</div>
+        <div class="product-info">
+          <div>
+            <div class="product-title">Epson EcoTank L8180</div>
+            <div class="product-desc">Цветной принтер A3+ с СНПЧ — экономия на чернилах до 90%.</div>
+            <div class="product-price">42 490 ₽</div>
+          </div>
+          <button class="btn add-to-cart" data-id="6">Добавить</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img">🚁</div>
+        <div class="product-info">
+          <div>
+            <div class="product-title">DJI Mini 4 Pro</div>
+            <div class="product-desc">Компактный дрон с 4K HDR и уклонением от препятствий.</div>
+            <div class="product-price">114 990 ₽</div>
+          </div>
+          <button class="btn add-to-cart" data-id="7">Добавить</button>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img">🖥️</div>
+        <div class="product-info">
+          <div>
+            <div class="product-title">Samsung Odyssey G9</div>
+            <div class="product-desc">Игровой монитор 49" QLED, 240 Гц, 1000R изгиб.</div>
+            <div class="product-price">149 990 ₽</div>
+          </div>
+          <button class="btn add-to-cart" data-id="8">Добавить</button>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 NeoTech. Все права защищены.</p>
+  </footer>
+
+  <script src="Scripts/app.js"></script>
 </body>
 
 </html>
